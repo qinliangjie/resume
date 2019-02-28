@@ -1,0 +1,66 @@
+
+.container{
+  width: 100%;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  overflow: hidden;
+}
+.firstBody{
+  transition: all 1s inherit;
+}
+.view-item{
+  width: 750rpx;
+  height:300rpx;
+  flex-shrink:0;
+  color:white;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  overflow: hidden
+}
+#basic{
+  background: linear-gradient(to bottom, rgb(16, 165, 219), rgb(147, 227, 247));
+}
+.myname{
+  margin-top: 120rpx;
+  font-size: 25px
+}
+.myimg{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 150rpx;
+  margin-top: 100rpx;
+  margin-left: 50rpx;
+}
+.leftcomtent{
+  width: 360rpx;
+  margin-left: 20rpx
+}
+.mynromal{
+  font-size: 14px;
+  margin-top: 10rpx
+}
+.mynromal text{
+  margin-left: 20rpx
+}
+@-webkit-keyframes shark{
+  0% {margin-left:0}
+  20% {margin-left: -40rpx}
+  40% {margin-left: -60rpx}
+  50% {margin-left: -40rpx}
+  60% {margin-left: 0}
+  70% {margin-left: -30rpx}
+  80% {margin-left: -50rpx}
+  90% {margin-left: -30rpx}
+  100%{margin-left: 0}
+}
+.firstBody{
+  width: 670rpx;
+  height: 400rpx;
+  border:1px solid #eee;
+  box-shadow:0 0 24rpx 0 rgba(0, 0, 0, 0.06), 0 1rpx 0 0 rgba(0, 0, 0, 0.02);
+  border-radius: 20rpx;
+  margin-top: -30rpx;
+  margin-left: 40rpx;
+  background-color: white
+}
