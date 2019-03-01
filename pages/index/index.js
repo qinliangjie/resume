@@ -1,14 +1,13 @@
+var information = require('../../data/information.js');
+var work = require('../../data/work.js');
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
       imgmode:"aspectFill",
-      name:"王豹",
-      sex:"男",
-      age:"25",
-      liveIn:"江苏省苏州市",
+      name:"王洁",
+      post:"前端开发工程师",
       myimg:"../../img/imgs.png"
   },
 
@@ -32,7 +31,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    this.setData({
+      "information": information.data,
+      "workList": work.data
+    })
   },
 
   /**

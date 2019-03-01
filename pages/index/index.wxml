@@ -3,16 +3,48 @@
     <view id="basic" class="view-item">
       <image class='myimg rightcomtent' mode="{{imgmode}}" src='{{myimg}}'></image>
       <view class='leftcomtent'>
-        <view class='myname'>{{name}}</view> 
+        <view class='myname'>{{information.name}}</view> 
         <view class='mynromal'>
-          <text style='margin-left:0rpx'>{{sex}}</text>
-          <text>{{age}}</text>
-          <text>{{liveIn}}</text>
+          <text style='margin-left:0rpx'>{{information.post}}</text>
         </view>
       </view>
     </view>
-    <view class="firstBody">
-    
+    <view class="first_body">
+      <view class='titles'>
+        <image class='icons' src='/img/cherry.png'></image>
+          <text>基本信息</text> 
+      </view>
+      <view class='information normal_font'>
+          <view class='infor_half'>性别：<text>{{information.sex}}</text></view>
+          <view class='infor_half'>年龄：<text>{{information.age}}</text></view>
+          <view class='infor_half'>学历：<text>{{information.education}}</text></view>
+          <view class='infor_'>毕业院校：<text>{{information.school}}</text></view>
+          <view class='infor_'>就读时间：<text>{{information.schoolstart}} - {{information.schoolend}}</text></view>
+          <view class='infor_'>专业：<text>{{information.major}}</text></view>
+          <view class='infor_'>掌握技能：<text>{{information.skill}}</text></view>
+          <view class='infor_' wx:if="{{information.hobbies!=''||information.hobbies==null}}" >兴趣爱好：<text>{{information.hobbies}}</text></view>
+          <view class='infor_' wx:if="{{information.evaluation!=''||information.evaluation==null}}">自我评价：<text>{{information.evaluation}}</text></view>
+      </view>
+    </view>
+    <view class='secound_body'>
+      <view class='titles'>
+        <image class='icons' src='/img/watermelon.png'></image>
+        <text>工作经历</text>
+      </view>
+      <view class='information normal_font work_experience'>
+         <view class="work_item" wx:for="{{workList}}" wx:key="id" wx:for-index="idx">
+            <image src='/img/pine.png'></image>
+            <view class='infor_ work_time'>{{item.startTime}} - {{item.endTime}}</view>
+            <view class='infor_ work_company'>{{item.company}}</view>
+            <view class='infor_ work_post'>{{item.post}}</view>
+         </view>
+      </view>
+    </view>
+    <view class='third_body'>
+      <view class='titles'>
+        <image class='icons' src='/img/strawberry.png'></image>
+        <text>项目经历</text>
+      </view>
     </view>
   </view>
 
