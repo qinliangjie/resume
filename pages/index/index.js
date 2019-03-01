@@ -6,10 +6,11 @@ Page({
    */
   data: {
       imgmode:"aspectFill",
-    informatin: {
+      information: {
       "name": "覃良洁",
       "post": "3年前端开发",
       "sex": "女",
+      "myimg":"/img/imgs.png",
       "age": "25",
       "alive": "江苏省苏州市",
       "school": "东华理工大学",

@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
     <view id="basic" class="view-item">
-      <image class='myimg rightcomtent' mode="{{imgmode}}" src='{{myimg}}'></image>
+      <image class='myimg rightcomtent' mode="{{imgmode}}" src='{{information.myimg}}'></image>
       <view class='leftcomtent'>
         <view class='myname'>{{information.name}}</view> 
         <view class='mynromal'>
